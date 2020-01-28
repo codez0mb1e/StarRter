@@ -1,0 +1,130 @@
+---
+title: "R Basics"
+author: "Dmitry Petukhov"
+date: "2020-01-20"
+output:
+  ioslides_presentation:
+    widescreen: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Agenda
+
+Basic operators and data structures in R:
+
+- Arithmetic and operators
+- Basic data types and structures
+- Data frames.
+
+
+
+## Arithmetic
+Arithmetic:
+
+- Addition: `+`
+- Subtraction: `-`
+- Multiplication: `*`
+- Division: `/`
+- Exponentiation: `^`
+- Modulo: `%%`.
+
+
+## Arithmetic (practice)
+
+```{r}
+(1 / 10 * (100 - 1000)) ^ 2
+```
+
+```{r}
+abs(log(cos(pi/exp(1))))
+```
+
+
+## Operators
+
+Operators types:
+
+- Arithmetic operators
+- Relational operators
+- Logical operators
+- Assignment operators.
+
+```{r}
+(1 >= 10) | ((3.14 == 3.14) & !FALSE)
+```
+<font size="4">
+See also [R Operators](https://www.datamentor.io/r-programming/operator/).
+</font>
+
+
+## Assignment
+
+Set `x`, `y`, `z`:
+
+```{r}
+x <- 1
+x
+
+y <- "Hello, R!"
+z <- TRUE
+```
+
+## Assignment (2)
+
+Get variables list:
+
+```{r}
+ls() # get vars list
+rm(z) # remove z var
+ls() # check result
+```
+
+
+## Data types
+
+Data types:
+
+- scalars
+- vectors (numerical, character, logical)
+- matrices (include multidimensional arrays)
+- lists
+- data frames.
+
+
+
+## Data types (practice)
+
+Vector and list:
+```{r}
+c(x, 2, 3)
+
+list(a = y, b = c(x, 2, 3), с = NA)
+```
+
+
+##
+
+Matrix and array:
+```{r}
+matrix(data = 1:15, nrow = 3, ncol = 5)
+
+array(data = 1:24, dim = c(3, 4, 2))
+```
+
+
+##
+
+Data frame:
+```{r}
+data.frame(
+  col1 = 1:10,
+  col2 = seq(1, 20, by = 2),
+  col3 = rep(Sys.time(), times = 10)
+)
+```
+
+
