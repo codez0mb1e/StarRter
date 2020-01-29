@@ -1,7 +1,7 @@
 ---
 title: "R Basics"
 author: "Dmitry Petukhov"
-date: "2020-01-20"
+date: "`r Sys.Date()`"
 output:
   ioslides_presentation:
     widescreen: true
@@ -88,11 +88,11 @@ ls() # check result
 
 Data types:
 
-- scalars
-- vectors (numerical, character, logical)
-- matrices (include multidimensional arrays)
-- lists
-- data frames.
+- **scalars**
+- **vectors** (one dimensional array): can hold numeric, character or logical values. The elements in a vector all have the same data type.
+- **matrices** (two dimensional array): can hold numeric, character or logical values. The elements in a matrix all have the same data type.
+- **lists**: the different items on that list most likely differ in length, characteristic, and type of activity that has to be done. 
+- **data frames** (two-dimensional objects): can hold numeric, character or logical values. Within a column all elements have the same data type, but different columns can be of different data type.
 
 
 
