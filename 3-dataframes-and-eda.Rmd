@@ -1,0 +1,204 @@
+---
+title: "Data Frames and Exploratory Data Analysis"
+author: "Dmitry Petukhov"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    df_print: paged
+    code_folding: hide
+    keep_md: true
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+    theme: flatly
+    highlight: textmate
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r set_env_opt, include=FALSE}
+options(max.print = 1e3, scipen = 999, width = 1e2)
+options(stringsAsFactors = F)
+```
+
+
+
+## Install packages
+
+Install dataset package:
+```{r}
+install.packages("datasets") 
+
+?datasets # short version
+library(help = "datasets") # or complete list of datasets
+```
+
+Loading / attaching package:
+```{r}
+library(datasets)
+```
+
+
+
+## Create data frame
+
+Create new data frame:
+```{r}
+df <- data.frame(
+  col1 = 1:10,
+  col2 = seq(1, 20, by = 2),
+  col3 = rep(Sys.time(), times = 10)
+)
+```
+
+...or load existing data frame:
+
+```{r}
+library(datasets)
+library(dplyr)
+
+# load
+stocks <- EuStockMarkets 
+
+# transform time-series to data table
+stocks <- as_tibble(stocks)
+```
+
+
+
+## Discovery data frame structure
+
+View data:
+```{r}
+head(stocks)
+
+tail(stocks)
+```
+
+
+Data slices:
+```{r}
+stocks[1, ]
+
+stocks[10:20, ]
+
+stocks[10:20, c(1, 3)]
+```
+
+
+Data frame metadata:
+```{r}
+print(dim(stocks))
+
+print(str(stocks))
+
+print(summary(stocks))
+
+skimr::skim_to_list(stocks)
+
+```
+
+## Descriptive statistics in R
+
+Statistics types:
+
+- Center: mean(), median()
+- Spread: sd(), IQR(), mad()
+- Range: min(), max(), quantile()
+- Position: first(), last(), nth(),
+- Count: n(), n_distinct()
+
+
+
+```{r}
+min(stocks$DAX)
+mean(stocks$CAC)
+max(stocks$FTSE)
+```
+
+
+```{r}
+library(tidyr)
+
+funs <- list(min, mean, median, sd, var, IQR, max)
+
+stocks %>% 
+  gather(stock, close) %>% 
+  group_by(stock) %>% 
+  summarise_all(funs)
+```
+
+See also: https://www.statsandr.com/blog/descriptive-statistics-in-r/ 
+
+
+## Vizualization
+```{r}
+library(ggplot2)
+
+df <- stocks %>% gather(stock, close)
+```
+
+### Histogram
+
+```{r}
+hist(stocks$DAX)
+```
+
+
+
+### Boxplot
+
+```{r}
+boxplot(df$close ~ df$stock)
+
+boxplot(log(df$close) ~ df$stock)
+```
+
+
+
+### Scatterplot
+```{r}
+plot(stocks$DAX, stocks$SMI)
+```
+
+
+### Correlation plot
+```{r}
+library(corrplot)
+
+fake_trades <- stocks$DAX - rnorm(nrow(stocks), mean = 1000, sd = 2000)
+              
+M <- cor(stocks %>% mutate(FAKE = fake_trades))
+print(M)
+
+corrplot(M)
+
+```
+
+```{r}
+corrplot(M,
+         method = "square",
+         order = "hclust", diag = F, tl.col = "black", tl.cex = 0.7,
+         title = "Stocks correlation matrix",
+         mar = c(0,1,2,0))
+```
+
+
+### Density plot
+
+```{r}
+plot(density(stocks$DAX))
+
+plot(density(na.omit(stocks$DAX - lag(stocks$DAX))))
+```
+
+
+
+
+
+
+
+
