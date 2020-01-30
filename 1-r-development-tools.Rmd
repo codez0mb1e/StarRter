@@ -11,6 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ## Agenda
+
 - About R 
 - R features
 - R: runtime, core packages, and IDEs
@@ -18,28 +19,30 @@ knitr::opts_chunk$set(echo = FALSE)
 - Launch and _Hello, R_ script
 
 
-## About R
+## About R (programming language)
 
-Класс языка: мультипарадигмальный (в т.ч. __функциональный__)
+<font size="5">
+Paradigms: multi-paradigm (including __functional__)
 
-Тип исполнения: __интерпретируемый__
+Runtime: __interpreted__
 
-Типизация: __динамическая__
+Typing discipline: __dynamic__
 
-Платформы: __Unix, Mac OS, Windows__
+Supported OS: __Unix, Mac OS, Windows__
 
-Лицензий: __Open source__ (GNU GPL 2)
+License: __Open source__ (GNU GPL 2)
 
-Год выпуска: 1993
+First appeared: 1993
 
-Текущая версия: [3.6.2](https://cran.r-project.org/src/base/R-3/) (2019-12-12)
+Stable release: [3.6.2](https://cran.r-project.org/src/base/R-3/) (2019-12-12)
 
-Сайт проекта:	[r-project.org](https://www.r-project.org/)
-
+Website:	[r-project.org](https://www.r-project.org/)
+</font>
 
 
 ## R (ƒ)eatures
 
+<font size="5">
 Нацелен на решение статистических задач и задач анализа данных
 
 Мощный и лаконичный синтаксис
@@ -48,16 +51,25 @@ __Векторизация вычислений__ (SIMD) «из коробки»
 
 Большое community со стороны __индустрии и академического сообщества__
 
+Возможность исполнять код на __R, C, Python__
+
+Удобная IDE и возможности по визуализации
+
 __15000+__ вспомогательных библиотек (packages)
 
 Зрелость языка и пакетов: __20+ лет существования__.
-
+</font>
 
 
 ## R: runtime, core packages, and IDEs
 
-- Multiple OSs, multiple R runtimes, multiple IDEs
-- Possible to build a __software stack based only on Open Source__.
+<font size="5">
+
+- Multiple OSs, multiple R runtimes, multiple IDEs, terminal (console)
+- Possible to build a __software stack based only on Open Source__
+- Available via cloud platforms: Microsoft Azure, AWS, Google Cloud.
+
+</font>
 
 <div class="columns-2">
   ![](img/ide-runtime-os.png)
@@ -70,7 +82,8 @@ __15000+__ вспомогательных библиотек (packages)
 1. Use [CRAN](https://cran.r-project.org/) or [Microsoft R Open](https://mran.microsoft.com/documents/rro/installation) installation guide
 2. Install your favourite free IDE: [RStudio](https://rstudio.com/products/rstudio/), [Jupiter Notebooks](https://jupyter.org/install), or
 [Visual Studio Code](https://code.visualstudio.com/download).
-3. Start programming! :)
+3. (Optional) [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+4. **Start programming!** :)
 
 
 ## Hello, R!
@@ -79,5 +92,20 @@ __15000+__ вспомогательных библиотек (packages)
 print("Hello, R!")
 ```
 
+<font size="5">
+Know your tools! Read [RStudio IDE Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
+</font>
 
-Know your tools: [RStudio IDE Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
+
+## Hello, Git!
+
+<font size="5">
+Clone this repository from GitHub:
+</font>
+
+```
+# enter in the terminal
+git clone https://github.com/codez0mb1e/StarRter.git
+```
+
+
