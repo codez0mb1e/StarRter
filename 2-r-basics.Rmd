@@ -14,56 +14,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Agenda
 
-Basic operators and data structures in R:
+Basic **operators** and **data structures** in R:
 
-- Arithmetic and operators
+- Operators
 - Basic data types and structures
 - Data frames.
 
 
-
-## Arithmetic
-Arithmetic:
-
-- Addition: `+`
-- Subtraction: `-`
-- Multiplication: `*`
-- Division: `/`
-- Exponentiation: `^`
-- Modulo: `%%`.
-
-
-## Arithmetic (practice)
-
-```{r}
-(1 / 10 * (100 - 1000)) ^ 2
-```
-
-```{r}
-abs(log(cos(pi/exp(1))))
-```
-
-
 ## Operators
 
-Operators types:
+Types:
 
-- Arithmetic operators
-- Relational operators
-- Logical operators
-- Assignment operators.
-
-```{r}
-(1 >= 10) | ((3.14 == 3.14) & !FALSE)
-```
-<font size="4">
-See also [R Operators](https://www.datamentor.io/r-programming/operator/).
-</font>
+- **Assignment** operators: `<-`
+- **Arithmetic** operators: `+-*/^`
+- **Relational** operators: `<>==`
+- **Logical** operators: `&|!`
 
 
-## Assignment
+## Assignment  {.columns-2}
 
-Set `x`, `y`, `z`:
+Set variables `x`, `y`, `z`:
 
 ```{r}
 x <- 1
@@ -73,7 +43,7 @@ y <- "Hello, R!"
 z <- TRUE
 ```
 
-## Assignment (2)
+<br/>
 
 Get variables list:
 
@@ -84,15 +54,53 @@ ls() # check result
 ```
 
 
+## Arithmetic and math functions {.columns-2}
+
+- Addition: `+`
+- Subtraction: `-`
+- Multiplication: `*`
+- Exponentiation: `^`
+- Division: `/`
+- Modulo: `%%`
+- Integer division: `%/%`.
+
+_
+
+<br />
+
+Arithmetic operations:
+```{r}
+(1 / 10 * (100 - 1000)) ^ 2
+```
+
+Math functions:
+```{r}
+abs(log(cos(pi/exp(1))))
+```
+
+
+## **Relational** and **Logical** operators
+
+Example:
+```{r}
+(1 >= 10) | ((3.14 == 3.14) & !FALSE)
+```
+
+<font size="5">
+See also [R Operators](https://www.datamentor.io/r-programming/operator/).
+</font>
+
+
+
 ## Data types
 
 Data types:
 
-- **scalars**
-- **vectors** (one dimensional array): can hold numeric, character or logical values. The elements in a vector all have the same data type.
-- **matrices** (two dimensional array): can hold numeric, character or logical values. The elements in a matrix all have the same data type.
+- **scalars**:  numeric, character or logical values
+- **vectors** (one dimensional array): numeric, character or logical value; all elements have the same data type.
+- **matrices** (two dimensional array): numeric, character or logical values; all elements have the same data type.
 - **lists**: the different items on that list most likely differ in length, characteristic, and type of activity that has to be done. 
-- **data frames** (two-dimensional objects): can hold numeric, character or logical values. Within a column all elements have the same data type, but different columns can be of different data type.
+- **data frames** (two-dimensional objects) numeric, character or logical values; within a column all elements have the same data type, but different columns can be of different data type.
 
 
 
