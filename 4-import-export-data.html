@@ -11,7 +11,7 @@
 
 <meta name="author" content="Dmitry Petukhov" />
 
-<meta name="date" content="2020-01-30" />
+<meta name="date" content="2020-01-31" />
 
 <title>Importing and Exporting Data</title>
 
@@ -2913,16 +2913,16 @@ div.tocify {
 
 <h1 class="title toc-ignore">Importing and Exporting Data</h1>
 <h4 class="author">Dmitry Petukhov</h4>
-<h4 class="date">2020-01-30</h4>
+<h4 class="date">2020-01-31</h4>
 
 </div>
 
 
-<div id="import-data" class="section level2">
-<h2>Import data</h2>
+<div id="formats-and-data-sources" class="section level2">
+<h2>Formats and data sources</h2>
 <p>Available formats:</p>
 <ul>
-<li><strong>csv</strong>: various separators, various encoding, compressed (.gz, .bz2) or not</li>
+<li><strong>CSV files</strong>: various separators, various encoding, plain or compressed (.gz, .bz2)</li>
 <li><strong>Excel</strong></li>
 <li><strong>Database</strong>: PostgreSQL, SQL Server, Oracle DB</li>
 <li><strong>Big Data clusters</strong>: Spark, Hive, Impala</li>
@@ -2937,15 +2937,14 @@ div.tocify {
 <li><strong>Cloud storage services</strong>, such as Azure Blob Storage.</li>
 </ul>
 </div>
-<div id="import-data-1" class="section level2">
+<div id="import-data" class="section level2">
 <h2>Import data</h2>
 <div id="import-data-from-csv" class="section level3">
-<h3>Import data from <code>csv</code></h3>
+<h3>Import data from <code>CSV</code></h3>
 <p>Import from local storage:</p>
 <pre class="r"><code>library(data.table)
 
 products_csv &lt;- fread(&quot;data/products.csv&quot;)
-
 products_csv</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -2954,7 +2953,6 @@ products_csv</code></pre>
 </div>
 <p>Import from web (this repo in github):</p>
 <pre class="r"><code>products_web &lt;- fread(&quot;https://raw.githubusercontent.com/codez0mb1e/StarRter/master/data/products.csv&quot;)
-
 products_web</code></pre>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
@@ -3001,8 +2999,8 @@ products_sql &lt;- dbGetQuery(conn, &quot;select * from dbo.products&quot;)</cod
 </div>
 </div>
 <div id="export-data-to-csv" class="section level2">
-<h2>Export data to csv</h2>
-<p>Filter data for export:</p>
+<h2>Export data to <code>CSV</code></h2>
+<p>##$ Export to CSV Filter data for export:</p>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: 'dplyr'</code></pre>

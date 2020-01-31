@@ -1,7 +1,7 @@
 ---
 title: "Importing and Exporting Data"
 author: "Dmitry Petukhov"
-date: "2020-01-30"
+date: "2020-01-31"
 output: 
   html_document:
     df_print: paged
@@ -20,11 +20,11 @@ output:
 
 
 
-## Import data
+## Formats and data sources
 
 Available formats:
 
-- **csv**: various separators, various encoding, compressed (.gz, .bz2) or not
+- **CSV files**: various separators, various encoding, plain or compressed (.gz, .bz2)
 - **Excel**
 - **Database**: PostgreSQL, SQL Server, Oracle DB 
 - **Big Data clusters**: Spark, Hive, Impala
@@ -43,7 +43,7 @@ From sources:
 
 ## Import data
 
-### Import data from `csv`
+### Import data from `CSV`
 
 Import from local storage:
 
@@ -51,7 +51,6 @@ Import from local storage:
 library(data.table)
 
 products_csv <- fread("data/products.csv")
-
 products_csv
 ```
 
@@ -65,7 +64,6 @@ Import from web (this repo in github):
 
 ```r
 products_web <- fread("https://raw.githubusercontent.com/codez0mb1e/StarRter/master/data/products.csv")
-
 products_web
 ```
 
@@ -146,8 +144,9 @@ products_sql <- dbGetQuery(conn, "select * from dbo.products")
 
 
 
-## Export data to csv
+## Export data to `CSV`
 
+##$ Export to CSV
 Filter data for export:
 
 ```r
