@@ -43,21 +43,25 @@ Website:	[r-project.org](https://www.r-project.org/)
 ## R (ƒ)eatures
 
 <font size="5">
-Нацелен на решение статистических задач и задач анализа данных
 
-Мощный и лаконичный синтаксис
+Нацелен на решение статистических задач и задач анализа данных
 
 __Векторизация вычислений__ (SIMD) «из коробки»
 
-Большое community со стороны __индустрии и академического сообщества__
+__15000+ специализированных__ библиотек (packages)
 
 Возможность исполнять код на __R, C, Python__
 
-Удобная IDE и возможности по визуализации
+Большое community со стороны __индустрии и академического сообщества__
 
-__15000+__ вспомогательных библиотек (packages)
+Зрелость языка и пакетов: __20+ лет существования__
 
-Зрелость языка и пакетов: __20+ лет существования__.
+Мощный и лаконичный синтаксис
+
+Удобная IDE, возможности по визуализации, работа с markdown-разметкой
+
+___Это все сделано на R!___
+
 </font>
 
 
@@ -83,7 +87,13 @@ __15000+__ вспомогательных библиотек (packages)
 2. Install your favourite free IDE: [RStudio](https://rstudio.com/products/rstudio/), [Jupiter Notebooks](https://jupyter.org/install), or
 [Visual Studio Code](https://code.visualstudio.com/download).
 3. (Optional) [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-4. **Start programming!** :)
+
+-- or
+
+1. Use Data Science VM images in Azure, AWS, Google Cloud, etc.
+
+
+And **start programming!** :)
 
 
 ## Hello, R!
@@ -109,3 +119,8 @@ git clone https://github.com/codez0mb1e/StarRter.git
 ```
 
 
+## Conclusion
+
+<font size="4">
+[Back to Course program](/)
+</font>
