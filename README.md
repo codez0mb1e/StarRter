@@ -1,24 +1,35 @@
 # StarRter
-Introduction to R (online course)
+**Introduction to R (online course)**
 
 
-### R Development Tools
-**The first module**
+### Topics:
+
+#### 1. R Development Tools
 
 - [Slides](1-r-development-tools.html)
 
 
-## R Basics
+#### 2. R Basics
+
 - [Slides](2-r-basics.html)
 
-## Data Frames and Exploratory Data Analysis
+
+#### 3. Data Frames and Exploratory Data Analysis
+
 - [Slides](3-dataframes-and-eda.html)
+- [Source code](3-dataframes-and-eda.Rmd)
 
-## Importing and Exporting Data
+
+#### 4. Importing and Exporting Data
+
 - [Slides](4-import-export-data.html)
+- [Source code](4-import-export-data.Rmd)
 
 
-## Demo: Machine Learning Case in R
+#### 5. Demo: Machine Learning Case in R
 - [Slides]()
+- [Source code]()
 
-### [References](references.html)
+
+#### [References](references.html)
+
