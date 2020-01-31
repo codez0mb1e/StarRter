@@ -143,10 +143,10 @@ products_sql <- dbGetQuery(conn, "select * from dbo.products")
 ```
 
 
-
 ## Export data to `CSV`
 
-##$ Export to CSV
+### Export to CSV
+
 Filter data for export:
 
 ```r
@@ -213,5 +213,10 @@ write.table(new_products, "data/new_products.csv",
 And now check result via 'Import dataset' wizard in RStudio.
 
 
+## Conclusion
+
+<font size="4">
+[Back to Course program](/StarRter/)
+</font>
 
 

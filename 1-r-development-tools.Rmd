@@ -28,7 +28,7 @@ Runtime: __interpreted__
 
 Typing discipline: __dynamic__
 
-Supported OS: __Unix, Mac OS, Windows__
+Supported OS: __Unix, MacOS, Windows__
 
 License: __Open source__ (GNU GPL 2)
 
@@ -52,9 +52,9 @@ __15000+ специализированных__ библиотек (packages)
 
 Возможность исполнять код на __R, C, Python__
 
-Большое community со стороны __индустрии и академического сообщества__
+Большое __community__ со стороны __индустрии и академического сообщества__
 
-Зрелость языка и пакетов: __20+ лет существования__
+Зрелость языка и пакетов: __25+ лет существования__
 
 Мощный и лаконичный синтаксис
 
@@ -69,9 +69,9 @@ ___Это все сделано на R!___
 
 <font size="5">
 
-- Multiple OSs, multiple R runtimes, multiple IDEs, terminal (console)
+- Multiple __OSs__, multiple __R runtimes__, multiple __IDEs__, __terminal__ (console)
 - Possible to build a __software stack based only on Open Source__
-- Available via cloud platforms: Microsoft Azure, AWS, Google Cloud.
+- Available via __cloud platforms__: Microsoft Azure, AWS, Google Cloud.
 
 </font>
 
@@ -82,18 +82,22 @@ ___Это все сделано на R!___
 
 ## Install R Ecosystem
 
-0. Your PC host any of the following OS: Linux, Mac OS, Windows.
+<font size="5">
+
+0. Your PC host any of the following OS: Linux, MacOS, or Windows.
 1. Use [CRAN](https://cran.r-project.org/) or [Microsoft R Open](https://mran.microsoft.com/documents/rro/installation) installation guide
-2. Install your favourite free IDE: [RStudio](https://rstudio.com/products/rstudio/), [Jupiter Notebooks](https://jupyter.org/install), or
+2. Install your favourite *free IDE*: [RStudio](https://rstudio.com/products/rstudio/), [Jupiter Notebooks](https://jupyter.org/install), or
 [Visual Studio Code](https://code.visualstudio.com/download).
 3. (Optional) [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
--- or
+-- *or*
 
 1. Use Data Science VM images in Azure, AWS, Google Cloud, etc.
 
 
 And **start programming!** :)
+
+</font>
 
 
 ## Hello, R!
@@ -103,7 +107,9 @@ print("Hello, R!")
 ```
 
 <font size="5">
+
 Know your tools! Read [RStudio IDE Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)
+
 </font>
 
 
@@ -122,5 +128,5 @@ git clone https://github.com/codez0mb1e/StarRter.git
 ## Conclusion
 
 <font size="4">
-[Back to Course program](/)
+[Back to Course program](/StarRter/)
 </font>

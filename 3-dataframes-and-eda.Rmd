@@ -206,6 +206,11 @@ plot(density(na.omit(stocks$DAX - lag(stocks$DAX))))
 
 
 
+## Conclusion
+
+<font size="4">
+[Back to Course program](/StarRter/)
+</font>
 
 
 

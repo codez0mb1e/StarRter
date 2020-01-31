@@ -100,7 +100,7 @@ Data types:
 - **vectors** (one dimensional array): numeric, character or logical value; all elements have the same data type.
 - **matrices** (two dimensional array): numeric, character or logical values; all elements have the same data type.
 - **lists**: the different items on that list most likely differ in length, characteristic, and type of activity that has to be done. 
-- **data frames** (two-dimensional objects) numeric, character or logical values; within a column all elements have the same data type, but different columns can be of different data type.
+- **data frames** (two-dimensional objects): numeric, character or logical values; within a column all elements have the same data type, but different columns can be of different data type.
 
 
 
@@ -135,4 +135,10 @@ data.frame(
 )
 ```
 
+
+## Conclusion
+
+<font size="4">
+[Back to Course program](/StarRter/)
+</font>
 

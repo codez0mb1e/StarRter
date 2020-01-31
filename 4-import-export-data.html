@@ -3000,7 +3000,9 @@ products_sql &lt;- dbGetQuery(conn, &quot;select * from dbo.products&quot;)</cod
 </div>
 <div id="export-data-to-csv" class="section level2">
 <h2>Export data to <code>CSV</code></h2>
-<p>##$ Export to CSV Filter data for export:</p>
+<div id="export-to-csv" class="section level3">
+<h3>Export to CSV</h3>
+<p>Filter data for export:</p>
 <pre class="r"><code>library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: 'dplyr'</code></pre>
@@ -3036,6 +3038,11 @@ new_products</code></pre>
             sep = &quot;,&quot;, 
             row.names = F)</code></pre>
 <p>And now check result via ‘Import dataset’ wizard in RStudio.</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p><font size="4"> <a href="/StarRter/">Back to Course program</a> </font></p>
 </div>
 
 
