@@ -1,7 +1,6 @@
 ---
 title: "Importing and Exporting Data"
 author: "Dmitry Petukhov"
-date: "2020-01-31"
 output: 
   html_document:
     df_print: paged

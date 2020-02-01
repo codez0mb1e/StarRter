@@ -1,5 +1,4 @@
-# StarRter
-**Introduction to R (online course)**
+# Introduction to R (online course)
 
 
 ### Topics:

@@ -1,7 +1,6 @@
 ---
 title: "R Basics"
-author: "Dmitry Petukhov"
-date: "`r Sys.Date()`"
+author: "Introduction to R (online course)"
 output:
   ioslides_presentation:
     widescreen: true

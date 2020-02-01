@@ -1,8 +1,9 @@
 ---
 title: "R Development Tools"
-author: "Dmitry Petukhov"
-date: "`r Sys.Date()`"
-output: ioslides_presentation
+author: "Introduction to R (online course)"
+output:
+  ioslides_presentation:
+    widescreen: true
 ---
 
 ```{r setup, include=FALSE}
