@@ -24,10 +24,9 @@
 - [Source code](4-import-export-data.Rmd)
 
 
-#### 5. Demo: Machine Learning Case in R
-- [Slides]()
-- [Source code]()
+### Roadmap
 
+#### 5. Demo: Machine Learning Case in R
 
 #### [References](references.html)
 
