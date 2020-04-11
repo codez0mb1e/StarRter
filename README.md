@@ -28,5 +28,5 @@
 
 #### 5. Demo: Machine Learning Case in R
 
-#### [References](references.html)
+### [References](references.html)
 
