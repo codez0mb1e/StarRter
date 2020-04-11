@@ -7,9 +7,6 @@
 
 - [Slides](1-r-development-tools.html)
 
-<iframe src="//player.vimeo.com/video/390969450?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="100%" height="315" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="height: 315px;"></iframe>
-
-
 #### 2. R Basics
 
 - [Slides](2-r-basics.html)
