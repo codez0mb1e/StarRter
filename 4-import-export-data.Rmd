@@ -59,6 +59,8 @@ products_csv
 
 Import from web (this repo in github):
 ```{r}
+library(curl)
+
 products_web <- fread("https://raw.githubusercontent.com/codez0mb1e/StarRter/master/data/products.csv")
 products_web
 ```
